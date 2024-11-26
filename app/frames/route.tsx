@@ -144,7 +144,6 @@ const frameHandler = frames(async (ctx) => {
 
   const ScoreScreen = () => {
     return (
-      // [#8660cc]
       <div tw="flex flex-col w-full h-full bg-[#006994] text-[#FFDEAD] font-sans">
       
       <div tw="flex items-center justify-center text-white mt-18">
@@ -200,17 +199,16 @@ const frameHandler = frames(async (ctx) => {
       <Button action="post" target={{ href: `${appURL()}?userfid=${fid}` }}>
         Check Me
       </Button>,
-      <Button
-        action="link"
-        target={shareUrl1}      >
+      <Button action="link" target={shareUrl1}>
         Share
       </Button>,
-      <Button
-        action="link"
-        target="https://warpcast.com/cashlessman.eth"
-      >
+         <Button
+         action="link"
+         target="https://warpcast.com/cashlessman.eth"
+         >
         Builder 👤
-      </Button>
+       </Button>
+      
     );
   } else {
     buttons.push(
