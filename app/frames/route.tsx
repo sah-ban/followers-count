@@ -1,3 +1,4 @@
+
 import { Button } from "frames.js/next";
 import { frames } from "./frames";
 import { appURL, formatNumber } from "../utils";
@@ -128,15 +129,19 @@ const frameHandler = frames(async (ctx) => {
     await Promise.all([fetchUserData(fid), timeCreatedAt(fid)]);
   }
   const SplashScreen = () => (
-<div tw="flex flex-col w-full h-full bg-[#0077be] text-[#f5deb3] font-sans font-bold">
-    <div tw="flex items-center m-auto mt-30">
+<div tw="flex flex-col w-full h-full bg-[#006994] text-[#f5deb3] font-sans font-bold">
+    <div tw="flex items-center items-center justify-center mt-30">
             <img
               src="https://wrpcd.net/cdn-cgi/imagedelivery/BXluQx4ige9GuW0Ia56BHw/17366316-de71-4c9f-a995-b5ae4eaf9800/original"
               alt="Profile"
-              tw="w-50 h-50 rounded-lg mr-4"
+              tw="w-50 h-50 rounded-lg"
             />
     </div>
-      <div tw="flex text-5xl font-bold m-auto"><h3>Check your Live Followers Count</h3></div>
+      <div tw="flex text-5xl font-bold items-center justify-center mt-20">Check your<img
+              src="https://wrpcd.net/cdn-cgi/imagedelivery/BXluQx4ige9GuW0Ia56BHw/542f5c62-bed7-41be-5d48-aa2e6cbc8a00/original"
+              alt="Profile"
+              tw="w-40 h-20"
+            />Followers Count</div>
 
     </div>
   );
@@ -159,7 +164,7 @@ const frameHandler = frames(async (ctx) => {
       
        <div tw="flex flex-col items-center text-5xl">
      
-       <span tw="flex text-4xl"> <img
+       <span tw="flex"> <img
               src="https://wrpcd.net/cdn-cgi/imagedelivery/BXluQx4ige9GuW0Ia56BHw/5d831005-505a-492f-58a0-d939705c0200/original"
               alt="Profile"
               tw="w-60 h-30  mr-4"
