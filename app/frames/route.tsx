@@ -182,15 +182,15 @@ const frameHandler = frames(async (ctx) => {
 );
 
 
-const shareText2 = encodeURIComponent(
-  `🎉 ${followerCount?.count} amazing souls in this little corner of the internet! Your support means the world—thanks for being part of this journey. \nframe by @cashlessman.eth`
-);
+// const shareText2 = encodeURIComponent(
+//   `🎉 ${followerCount?.count} amazing souls in this little corner of the internet! Your support means the world—thanks for being part of this journey. \nframe by @cashlessman.eth`
+// );
 
   const shareUrl1 = `https://warpcast.com/~/compose?text=${shareText1}&embeds[]=https://followers-count.vercel.app/frames`;
 
-  const shareUrl2 = `https://warpcast.com/~/compose?text=${shareText2}&embeds[]=https://followers-count.vercel.app/frames${
-    fid ? `?userfid=${fid}` : ""
-  }`;
+  // const shareUrl2 = `https://warpcast.com/~/compose?text=${shareText2}&embeds[]=https://followers-count.vercel.app/frames${
+  //   fid ? `?userfid=${fid}` : ""
+  // }`;
 
 
   const buttons = [];
@@ -217,7 +217,7 @@ const shareText2 = encodeURIComponent(
       <Button action="post" target={{ href: `${appURL()}?userfid=${fid}` }}>
         Check Me
       </Button>,
-      <Button action="link" target={shareUrl2}>
+      <Button action="link" target={shareUrl1}>
         Share
       </Button>,
          <Button
